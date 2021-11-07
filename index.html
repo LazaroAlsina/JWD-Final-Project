@@ -46,18 +46,25 @@
               <div class="col-sm-10">
                 <input type="text" class="form-control form-control-sm" id="Assign" placeholder="Assign">
               </div>
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option selected>Select Status</option>
-                <option value="1">Backlog</option>
-                <option value="2">In progress</option>
-                <option value="3">Completed</option>
-              </select>
+              <div>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <option selected>Select Status</option>
+                  <option value="1">Backlog</option>
+                  <option value="2">In progress</option>
+                  <option value="3">Completed</option>
+                </select>
+              </div>
+              <label for="Assign" class="col-sm-2 col-form-label col-form-label-sm">Assign:</label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control form-control-sm" id="Assign" placeholder="Assign">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>
         <div class="col-6">
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
           </div>
           </form>
         </div>
@@ -78,13 +85,51 @@
       </div>
       <div class="row">
         <div class="col-3">
-          Place holder for backlog
+          <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Task 1</li>
+            <li class="list-group-item">Name of Task</li>
+            <li class="list-group-item">Assign</li>
+            <li class="list-group-item">Due date</li>
+            <li class="list-group-item">Move to Progress</li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Task 4</li>
+            <li class="list-group-item">Name of Task</li>
+            <li class="list-group-item">Assign</li>
+            <li class="list-group-item">Due date</li>
+            <li class="list-group-item">Move to Progress</li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Task 8</li>
+            <li class="list-group-item">Name of Task</li>
+            <li class="list-group-item">Assign</li>
+            <li class="list-group-item">Due date</li>
+            <li class="list-group-item">Move to Progress</li>
+          </ul>
         </div>
         <div class="col-6">
-          Place holder for in Progress
+          <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Task 12</li>
+            <li class="list-group-item">Name of Task</li>
+            <li class="list-group-item">Assign</li>
+            <li class="list-group-item">Due date</li>
+            <li class="list-group-item">Move to Completed</li>
+          </ul>
         </div>
         <div class="col-3">
-          Place holder for completed
+          <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Task 14</li>
+            <li class="list-group-item">Name of Task</li>
+            <li class="list-group-item">Assign</li>
+            <li class="list-group-item">Due date</li>
+            <li class="list-group-item">Move to Archive</li>
+          </ul><ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Task 17</li>
+            <li class="list-group-item">Name of Task</li>
+            <li class="list-group-item">Assign</li>
+            <li class="list-group-item">Due date</li>
+            <li class="list-group-item">Move to Archive</li>
+          </ul>
         </div>
       </div>
       <div class="row">
