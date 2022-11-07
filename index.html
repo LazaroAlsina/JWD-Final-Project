@@ -27,35 +27,39 @@
         <button type="button" class="btn btn-light"> Read More</button>
       </div>
     </div>
+  </body>
 
-    <form action="" method="">
-      <section class="Add a task">
-        <h1>Add a task!</h1>
-          <label for="task_name"></label>
-          <input type="text" placeholder="Task Name" name="task_name" id="task_name">
-        
+<br>
+
+<section>
+
+  <div class="mb-3">
+    <label for="task_name" class="form-label">Task Name</label>
+    <input type="name" class="form-control" id="task_name" placeholder="Task Name">
+  </div>
+  <div class="mb-3">
+    <label for="assigned_to" class="form-label">Assigned To</label>
+    <input type="name" class="form-control" id="assigned_to" placeholder="Assigned To">
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Task Description</label>
+    <textarea class="form-control" placeholder="Add description" id="description" rows="3"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="due_date" class="due_date">Due Date</label>
+    <input type="date" class="form-control" id="due_date" placeholder="Due Date">
+  </div>
+  <div class="mb-3">
+    <label for="assigned_to" class="form-label">Assigned To</label>
+    <input type="name" class="form-control" id="assigned_to" placeholder="Assigned To">
+  </div>
+
+  
     
-
-          <label for="assigned_to"></label>
-          <input type="text" placeholder="Assigned To" name="assigned_to" id="assigned_to">
+  <button type="button" class="btn btn-success">Submit</button>
 
 
-      <label for="assigned_to"></label>
-      <input type="text" placeholder="Assigned To" name="assigned_to" id="assigned_to">
-
-      <br>
-      <br>
-
-      <label for="text_box"></label>
-      <input type="text" placeholder="Description" name="assigned_to" id="assigned_to">
-
-      <label for="due date"></label>
-      <input type="date" placeholder="Due Date" name="due_date" id="due_date" min="2022-01-01" max="2023-12-31">
-      
-      <label for="status"></label>
-      <input type="text" placeholder="Status" name="status" id="status">
-    
-      <button type="button" class="btn btn-success">Submit</button>
+    </section>
 
 <!--JS Popper + Bootstrap JS files-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
