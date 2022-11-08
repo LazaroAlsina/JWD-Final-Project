@@ -18,10 +18,11 @@
         <div class="container-fluid nav-fill">
       <a class="nav-link active" aria-current="page" href="#about">About </a>
       <a class="nav-link" href="#add-task">Add Task</a>
-      <a class="nav-link" href="#">Task</a>
+      <a class="nav-link" href="#my-tasks">My Tasks</a>
       <a class="nav-link" disabled>Task Completed</a>
       <a class="nav-link" disabled>Task Deleted </a>
 
+      <!--Search Bar-->
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -33,18 +34,27 @@
 <br>
 <br>
 <br>
-    <!--About Section-->
 
-<!--Replacement Jumbotron Code from W3 Schools!-->
-<div class="mt-4 p-5 m-5 bg-light text-dark rounded container mx-auto mx-auto">
+
+<!--About US section-->
+<div class="mt-4 p-5 m-5 bg-light text-dark rounded container mx-auto mx-auto" id="about">
     <div class="row">
       <div class="col-3">
         <img class="img-fluid" src="./spacePirates.png" alt="space pirates logo here" >
       </div>
       <div class="col-8 p-3"> 
-        <h1>Jumbotron Example (about us section?)</h1> 
+        <h1>Space Pirates Task Manager</h1> 
 
-        <p>My dudes I made us a logo :p</p> <button type="button" class="btn btn-light"> Read More</button></div>
+        <p>Welcome to Space Pirates Task Manager! <br> 
+          Are you struggling to keep up with all of your daily tasks? <br>
+          Well, Worry Not! Space Pirates is here to make managing tasks a breeze! <br>
+          <br>
+         <strong> Space Pirates is extremely easy to use!</strong> <br>
+         To add a task, use the form below! <br>
+         To manage your tasks, navigate to <em>My Tasks</em> and use the buttons or drag and drop! <br>
+         Space Pirates - It's so easy, it should be considered piracy!
+        </p> 
+        <button type="button" class="btn btn-light"> Read More</button></div>
 
     
     </div>
@@ -101,49 +111,47 @@
     <!--[My Tasks] Section-->
     <!--gray background: [Container {row [col] [col] [col] } ]-->
     <!--we can use flexbox to accommodate the growing number of task boxes-->
-    <section class="container mx-auto text-center" id="My Tasks">
+    <section class="container mx-auto text-center mt-5" id="my-tasks">
+
       <h1 class="text-center">My Tasks</h1>
-      <div class="row align-items-center d-flex justify-content-center align-items-center">
-        <div class="col bg-danger text-white">
-          Todos
-        </div>
-        <div class="col bg-primary text-dark">
-          In-progress
-
-          <!-- Card 1-->
-          <div class="card" style="width: 25rem;">
-            <div class="card" style="width: 25rem;">
-              
-              <div class="row card-body">
-                <h5 class="card-title text-start" id="Task Name">Task Name Here</h5>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <p class="card-text text-start" id="Description">This is where the task description will appear!</p>
-                    </div>
-                    <div class="col">
-                      <h6 class="card-subtitle mb-2 text-muted text-start">Assigned to:</h6>
-                      <h6 class="card-subtitle mb-2 text-muted text-start">Due Date:</h6>
-                      <h6 class="card-subtitle mb-2 text-muted text-start">Status:</h6>
-                        <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                        </div>
-                    </div>
-                  </div>
-
-                  
-                  
-                </div>
-              </div>
+      <!-- First Div Container starts here-->
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col bg-danger text-dark d-flex justify-content-center align-items-center flex-column">
+          <h3 class="text-light">Todos</h3>
+          <div class="p-1">
+          <!--Card One-->
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card One</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
             </div>
-
-          <!-- Card 2-->
-          
+          </div>
+          <!--Card Two-->
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
             </div>
           </div>
         </div>
-        <div class="col bg-success text-white">
-          Done!
+
+        </div>
+        <div class="col bg-primary text-white">
+          In-progress
+        </div>
+        <!--Third Div-->
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col bg-danger text-dark d-flex justify-content-center align-items-center flex-column">
+          <h3 class="text-light">Done</h3>
+          <div class="p-1">
+            <!--Put your cards inside this div-->
+           </div>
           
         </div>
       </div>
@@ -153,7 +161,7 @@
 
     <!--Footer-->
   <footer>
-    <div class="text-center p-4 mt-5 sticky-bottom" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="text-center p-4 mt-5 sticky-bottom bg-light">
       © 2022 Space Pirates: Jean-nae, Jay, Ashley, Erick, Vaishali
     </div>
   </footer>
