@@ -3,13 +3,195 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Space Pirates Task Manager</title>
+<!--Bootstrap Link (version 5.2)-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!--CSS Link-->
+    <link href="./style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Hello World!!</h1>
-    <h1>Hello World!!</h1>
-    <h1>Hello World!!</h1>
-    <script src="script.js"></script>
+    <!--Do Not close the body tag! everything (except for meta/title/link tags) needs to go inside the body tag!-->
+
+    <!--Navbar-->
+    <div class="container">    
+      <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid nav-fill">
+      <a class="nav-link active" aria-current="page" href="#about">About </a>
+      <a class="nav-link" href="#add-task">Add Task</a>
+      <a class="nav-link" href="#">Task</a>
+      <a class="nav-link" disabled>Task Completed</a>
+      <a class="nav-link" disabled>Task Deleted </a>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      </div>
+    </nav>
+  </div>
+<br>
+<br>
+<br>
+    <!--About Section-->
+
+<!--Replacement Jumbotron Code from W3 Schools!-->
+<div class="mt-4 p-5 m-5 bg-light text-dark rounded container mx-auto mx-auto">
+    <div class="row">
+      <div class="col-3">
+        <img class="img-fluid" src="./spacePirates.png" alt="space pirates logo here" >
+      </div>
+      <div class="col-8 p-3"> 
+        <h1>Jumbotron Example (about us section?)</h1> 
+
+        <p>My dudes I made us a logo :p</p> <button type="button" class="btn btn-light"> Read More</button></div>
+
+    
+    </div>
+  </div>
+
+
+<!--Form Begins Here-->
+<h2 class="text-center text-uppercase">Add a task</h2>
+<br>
+<section class="container mx-auto border border-dark p-4" id="add-task">
+  <div class="row justify-content-around g-1">
+    <div class="mb-2 col-md-5">
+      <label for="task_name" class="form-label">Task Name</label>
+
+      <input type="name" class="form-control mt-1" id="task_name" placeholder="Task Name">
+
+    </div>
+    <div class="mb-2 col-md-5">
+      <label for="assigned_to" class="form-label">Assigned To</label>
+      <input type="name" class="form-control" id="assigned_to" placeholder="Assigned To">
+    </div>
+  </div>
+
+
+<div class="row justify-content-around g-1">
+  <div class="mb-3 col-md-5">
+    <label for="description" class="form-label ">Description of Task</label>
+    <textarea class="form-control" placeholder="Add description" id="description" rows="8"></textarea>
+  </div>
+
+  <div class="mb-3 col-md-5">
+    <label for="due_date" class="due_date">Due Date</label>
+    <input type="date" class="form-control" id="due_date" placeholder="Due Date">
+    <div class="row">
+      <div class="mb-3 col-md-12">
+        <label for="status" class="form-label mt-1">Status</label>
+        <input type="name" class="form-control" id="status" placeholder="Status">
+      </div>
+    </div>
+    <br>
+    <div class="row justify-content-center"> 
+      <button type="button" class="btn btn-success col-3">Submit</button>
+    </div>
+  </div>
+  
+</div>
+  
+    
+  
+
+
+    </section>
+
+    <!--[My Tasks] Section-->
+    <!--gray background: [Container {row [col] [col] [col] } ]-->
+    <!--we can use flexbox to accommodate the growing number of task boxes-->
+<<<<<<< Updated upstream
+    <section class="container mx-auto" id="My Tasks">
+      <h1>My Tasks</h1>
+      <div class="row align-items-start">
+        <div class="col">
+          Todos
+=======
+    <section class="container mx-auto text-center mt-5" id="my-tasks">
+
+      <h1 class="text-center">My Tasks</h1>
+      <!-- First Div Container starts here-->
+      <div class="row align-items-center d-flex justify-content-center align-items-center">
+        <div class="col bg-danger text-dark d-flex justify-content-center align-items-center flex-column">
+          <h3 class="text-light">Todos</h3>
+          <div class="p-1">
+          <!--Card One-->
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card One</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <!--Card Two-->
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <!--First Div container ends here-->
+        <!--Second Div-->
+        <div class="row align-items-center d-flex justify-content-center align-items-center">
+          <div class="col bg-danger text-dark d-flex justify-content-center align-items-center flex-column">
+          In-progress
+        </div>
+        <!--Third Div-->
+        <div class="row align-items-center d-flex justify-content-center align-items-center">
+          <div class="col bg-danger text-dark d-flex justify-content-center align-items-center flex-column">
+          Done!
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card One</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card One</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          
+>>>>>>> Stashed changes
+        </div>
+    </section>
+
+
+
+    <!--Footer-->
+  <footer>
+    <div class="text-center p-4 mt-5 sticky-bottom" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Space Pirates: Jean-nae, Jay, Ashley, Erick, Vaishali
+    </div>
+  </footer>
+
+<!--JS Popper + Bootstrap JS files-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+    
+    
   </body>
+
+
+  
+ 
+  
   </html>
