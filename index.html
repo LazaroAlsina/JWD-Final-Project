@@ -15,7 +15,7 @@
     <!--Navbar-->
     <div class="container">    
       <nav class="navbar navbar-expand-sm bg-light">
-        <div class="container-fluid">
+        <div class="container-fluid nav-fill">
       <a class="nav-link active" aria-current="page" href="#about">About </a>
       <a class="nav-link" href="#add-task">Add Task</a>
       <a class="nav-link" href="#">Task</a>
@@ -26,7 +26,7 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-      
+
       </div>
     </nav>
   </div>
@@ -59,6 +59,7 @@
     
     </div>
   </div>
+
  
 <br>
 <br>
@@ -86,10 +87,10 @@
 
   <div class="mb-3 col-md-5">
     <label for="due_date" class="due_date">Due Date</label>
-    <input type="date" class="form-control mt-2 mb-2" id="due_date" placeholder="Due Date">
+    <input type="date" class="form-control" id="due_date" placeholder="Due Date">
     <div class="row">
       <div class="mb-3 col-md-12">
-        <label for="status" class="form-label">Status</label>
+        <label for="status" class="form-label mt-1">Status</label>
         <input type="name" class="form-control" id="status" placeholder="Status">
       </div>
     </div>
@@ -110,7 +111,20 @@
     <!--[My Tasks] Section-->
     <!--gray background: [Container {row [col] [col] [col] } ]-->
     <!--we can use flexbox to accommodate the growing number of task boxes-->
-
+    <section class="container mx-auto" id="My Tasks">
+      <h1>My Tasks</h1>
+      <div class="row align-items-start">
+        <div class="col">
+          Todos
+        </div>
+          <div class="col">
+            In-progress
+          </div>
+           <div class="col">
+             Done!
+           </div>
+      </div>
+    </section>
 
 
 
