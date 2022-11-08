@@ -62,9 +62,10 @@
 
 
 <!--Form Begins Here-->
-<h2 class="text-center text-uppercase">Add a task</h2>
-<br>
+
 <section class="container mx-auto border border-dark p-4" id="add-task">
+  <h2 class="text-center text-uppercase">Add a task</h2>
+  <br>
   <div class="row justify-content-around g-1">
     <div class="mb-2 col-md-5">
       <label for="task_name" class="form-label">Task Name</label>
@@ -164,23 +165,24 @@
                 In-progress
       
                 <!-- Card 1-->
-                <div class="card" style="width: 25rem;">
-                  <div class="card" style="width: 25rem;">
+                <div class="card" style="width: 30rem;">
+                  <div class="card" style="width: 30rem;">
                     
                     <div class="row card-body">
                       <h5 class="card-title text-start" id="Task Name">Task Name Here</h5>
                       <div class="col">
                         <div class="row">
                           <div class="col">
-                            <p class="card-text text-start" id="Description">This is where the task description will appear!</p>
+                            <p class="card-text text-start" id="Description">This is where the task description will appear! This is where the task description will appear! This is where the task description will appear! This is where the task description will appear!</p>
                           </div>
                           <div class="col">
                             <h6 class="card-subtitle mb-2 text-muted text-start">Assigned to:</h6>
                             <h6 class="card-subtitle mb-2 text-muted text-start">Due Date:</h6>
                             <h6 class="card-subtitle mb-2 text-muted text-start">Status:</h6>
-                              <div class="progress">
-                              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                              <div class="slidecontainer">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                               </div>
+                            
                           </div>
                         </div>
       
