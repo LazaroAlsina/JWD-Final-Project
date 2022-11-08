@@ -12,15 +12,22 @@
   <body>
     <!--Do Not close the body tag! everything (except for meta/title/link tags) needs to go inside the body tag!-->
 
-    <nav class="nav">
+    <!--Navbar-->
+    <div class="container">    
+      <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
       <a class="nav-link active" aria-current="page" href="#about">About </a>
-      <a class="nav-link" href="#addTask">Add Task</a>
+      <a class="nav-link" href="#add-task">Add Task</a>
       <a class="nav-link" href="#">Task</a>
-      <a class="nav-link disabled">Task Completed</a>
-      <a class="nav-link disabled">Task Deleted </a>
+      <a class="nav-link" disabled>Task Completed</a>
+      <a class="nav-link" disabled>Task Deleted </a>
+      </div>
     </nav>
-    
-    <h1 id="about">About Us</h1>
+  </div>
+
+    <!--About Section-->
+    <section class="container mx-auto" id="about">
+    <h1>About Us</h1>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">About Space Pirates Task Manager </h1>
@@ -28,11 +35,12 @@
         <button type="button" class="btn btn-light"> Read More</button>
       </div>
     </div>
- 
+  </section>
 
 <br>
+<!--Form Begins Here-->
 
-<section class="container mx-auto border border-dark p-4" id="addTask">
+<section class="container mx-auto border border-dark p-4" id="add-task">
 
   <div class="mb-3">
     <label for="task_name" class="form-label">Task Name</label>
@@ -62,7 +70,12 @@
 
     </section>
 
-    <!--Please add Columns below this comment-->
+    <!--[My Tasks] Section-->
+    <!--gray background: [Container {row [col] [col] [col] } ]-->
+    <!--we can use flexbox to accommodate the growing number of task boxes-->
+
+
+
 
 <!--JS Popper + Bootstrap JS files-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
